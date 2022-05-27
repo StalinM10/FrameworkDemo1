@@ -23,11 +23,10 @@ public class Base {
 	public  Properties prop;
 	@SuppressWarnings("deprecation")
 
-	
-	public WebDriver initializeDriver( ) throws IOException {
+	public WebDriver initializeDriver() throws IOException {
 		
 		 prop = new Properties();
-		 FileInputStream fis = new FileInputStream("C:\\Users\\Public\\FrameworkDemo\\src\\main\\java\\resources\\Properties");
+		 FileInputStream fis = new FileInputStream("C:\\Users\\stalin\\git\\FrameworkDemo1\\FrameworkDemo\\src\\main\\java\\resources\\Properties");
 		 prop.load(fis);
 		 
 		 String browsername = prop.getProperty("browser");
