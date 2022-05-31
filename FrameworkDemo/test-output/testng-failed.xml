@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Loginpage">
+      <class name="tests.Cartpage">
         <methods>
-          <include name="closure"/>
-          <include name="login" invocation-numbers="1"/>
+          <include name="open2"/>
+          <include name="Tabletsincart"/>
         </methods>
-      </class> <!-- tests.Loginpage -->
+      </class> <!-- tests.Cartpage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
