@@ -13,7 +13,7 @@ import resources.Base;
 
 public class Cartpage extends Base {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	@Test
 	public void Tabletsincart() {
 		
@@ -28,7 +28,7 @@ public class Cartpage extends Base {
 		tablets.update().click();
 		
 		tablets.remove().click();
-		Assert.assertEquals(tablets.cartisempty().isDisplayed(), true); 
+		Assert.assertEquals(tablets.cartisempty().isDisplayed(), false ); 
 				
 	}
 	

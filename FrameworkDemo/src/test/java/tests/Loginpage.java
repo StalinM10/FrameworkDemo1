@@ -16,7 +16,7 @@ import resources.Base;
 
 public class Loginpage extends Base  {
 
-	WebDriver driver;
+	public WebDriver driver;
 	@Test(dataProvider = "getlogindata")
 	public void login(String email,String password,String Expectedresult) throws IOException {
 	

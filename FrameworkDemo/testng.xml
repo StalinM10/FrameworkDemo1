@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" thread-count="5" parallel="tests">
+
+<listeners>
+	<listener class-name="listners.Listeners"/>
+</listeners>
+
+<test thread-count="5" name="Test1">
     <classes>
       <class name="tests.Loginpage"/>
+     </classes>
+</test> <!-- Test -->
+  
+<test thread-count="5" name="Test2">
+    <classes>
+         <class name="tests.Cartpage"/>
     </classes>
-  </test> <!-- Test -->
+</test> <!-- Test -->
+  
 </suite> <!-- Suite -->
