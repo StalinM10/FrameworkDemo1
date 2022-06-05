@@ -17,13 +17,13 @@ public class Loguser {
 	}
 	
 	@FindBy(id="input-email")
-	WebElement username;
+	private WebElement username;
 	
 	@FindBy(id="input-password")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath="//input[@class='btn btn-primary']")
-	WebElement login;
+	private WebElement login;
 	
 	
 	public WebElement username() {

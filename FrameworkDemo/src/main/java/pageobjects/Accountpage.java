@@ -15,7 +15,7 @@ public class Accountpage {
 	}
 	
 	@FindBy(linkText="Edit your account information")
-	WebElement edityourinformation;
+	private WebElement edityourinformation;
 	
 	public WebElement edityourinformation() {
 	return edityourinformation;

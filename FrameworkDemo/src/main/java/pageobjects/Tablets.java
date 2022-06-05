@@ -14,25 +14,26 @@ public class Tablets {
 	}
 		
 		@FindBy(xpath="//div[@class='collapse navbar-collapse navbar-ex1-collapse']//a[text()='Tablets']")
-		WebElement tabletsmenu;
+		private WebElement tabletsmenu;
 		
 		@FindBy(xpath="//div[@class='button-group']//span[text()='Add to Cart']")
-		WebElement addtocart;
+		private WebElement addtocart;
 		
 		@FindBy(xpath="//div[@id='top-links']//span[text()='Shopping Cart']")
-		WebElement shoppingcart;
+		private WebElement shoppingcart;
 		
 		@FindBy(xpath="//input[@class='form-control']")
-		WebElement quantity;
+		private WebElement quantity;
 		
 		@FindBy(xpath="//button[@type='submit'][@class='btn btn-primary']")
-		WebElement update;
+		private WebElement update;
 		
 		@FindBy(xpath="//button[@type='button'][@class='btn btn-danger']")
-		WebElement remove;
+		private WebElement remove;
 		
 		@FindBy(xpath="//div[@id='content']/p[text()='Your shopping cart is empty!']")
-		WebElement cartisempty;
+		private WebElement cartisempty;
+		
 		public WebElement tabletsmenu() {
 			return tabletsmenu;
 		}
